@@ -7,15 +7,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class MatrixSolverImpl implements MatrixSolver {
+public class MatrixSolverImpl extends Matrix {
 	
 	// stores sums of all rows and columns
 	private ArrayList<Integer> allSums = new ArrayList<Integer>();
 	
 	/**
 	 * Finds the largest sum of all individual values in rows and columns in the matrix
-	 * @param inputMatrix	target matrix to calculate row and column sum for
-	 * @return sum		value of largest sum among sum of individual columns and rows
+	 * @param inputMatrix	- target matrix to calculate row and column sum for
+	 * @return value of largest sum among sum of individual columns and rows
 	 */
 	public Integer solveMatrix(ArrayList<ArrayList<String>> inputMatrix) {
 		int sum = 0;
@@ -51,8 +51,8 @@ public class MatrixSolverImpl implements MatrixSolver {
 	
 	/**
 	 * Loads matrix into ArrayList<ArrayList<String>> from input file
-	 * @param filename	name of input file containing matrix data
-	 * @return matrix	an ArrayList<ArrayList<String>> representation of the input matrix
+	 * @param filename	- name of input file containing matrix data
+	 * @return an ArrayList<ArrayList<String>> representation of the input matrix
 	 */
 	public ArrayList<ArrayList<String>> loadMatrix(String filename) {
 		BufferedReader buffer = null;
@@ -83,8 +83,8 @@ public class MatrixSolverImpl implements MatrixSolver {
 	
 	/**
 	 * Calculates the sum of an ArrayList<String> of integer data 
-	 * @param line	an ArrayList<String> representation of integers
-	 * @return sum	the integer sum of the input data
+	 * @param line	- an ArrayList<String> representation of integers
+	 * @return the integer sum of the input data
 	 */
 	public Integer sumList(ArrayList<String> line) {
 		int sum = 0;
