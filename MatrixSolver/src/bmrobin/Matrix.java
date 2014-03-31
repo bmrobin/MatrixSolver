@@ -8,7 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.StringBuilder;
 
-public abstract class Matrix {
+public class Matrix {
 
 	public ArrayList<ArrayList<String>> matrix;
 	private String filename;
