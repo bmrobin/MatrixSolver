@@ -13,6 +13,7 @@ public class MatrixSolveTest {
 			MatrixSolverImpl solve = new MatrixSolverImpl();
 			matrix = solve.loadMatrix(file);
 			sum = solve.solveMatrix(matrix);
+			solve.toString();
 			System.out.println("\n" + sum);
 		} catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println("No input file specified. Exiting...");
