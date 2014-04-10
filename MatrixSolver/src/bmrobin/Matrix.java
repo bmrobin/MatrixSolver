@@ -11,13 +11,11 @@ import java.lang.StringBuilder;
 public class Matrix {
 
 	public ArrayList<ArrayList<String>> matrix;
-	private String filename;
 	
 	// stores sums of all rows and columns
 	private ArrayList<Integer> allSums = new ArrayList<Integer>();
 	
 	public Matrix() {
-		filename = null;
 		matrix = new ArrayList<ArrayList<String>>();
 	}
 	
