@@ -21,23 +21,6 @@ public class Matrix {
 		matrix = new ArrayList<ArrayList<String>>();
 	}
 	
-	public void setFilename(String file) {
-		this.filename = file;
-	}
-	
-	public String toString() {
-		int i,j;
-		StringBuilder str = new StringBuilder();
-		for (i=0; i < matrix.size(); i++) {
-			System.out.println(matrix.get(i).toString());
-			for (j=0; j < matrix.get(i).size(); j++) {
-				System.out.println(matrix.get(i).get(j));
-			}
-		}
-		
-		return null;
-	}
-	
 	/**
 	 * Finds the largest sum of all individual values in rows and columns in the matrix
 	 * @param inputMatrix	- target matrix to calculate row and column sum for
@@ -112,7 +95,7 @@ public class Matrix {
 	 * @param line	- an ArrayList<String> representation of integers
 	 * @return the integer sum of the input data
 	 */
-	public Integer sumList(ArrayList<String> line) {
+	private Integer sumList(ArrayList<String> line) {
 		int sum = 0;
 		for (String i : line) {
 			sum += Integer.parseInt(i);
